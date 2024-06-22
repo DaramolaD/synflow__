@@ -19,7 +19,7 @@ const config = {
     },
     extend: {
       screens: {
-        tablet: "900px",
+        tablet: "995px",
       },
       colors: {
         primary: {
@@ -161,14 +161,21 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
-      gradientColorStops: theme => ({
-        'title-gradient': 'linear-gradient(180deg, #3a7326 0%, #42e26f 100%)',
-        'title-gradient-2': 'linear-gradient(90deg, #3a7326 0%, #42e26f 100%)',
-        'logo-gradient-border': 'linear-gradient(180deg, rgba(74, 58, 255, 1) 0%, rgba(76, 191, 255, 1) 100%)',
-        'button-gradient': 'linear-gradient(180deg, #3a7326 0%, #3c953d 44.5%, #42e26f 100%)',
-        'feature-gradient': 'linear-gradient(90deg, rgba(58, 115, 38, 0.79) 0%, #42e26f 100%)',
-        'preview-gradient': 'linear-gradient(90deg, #42e26f 0%, #dbfde4 50%, #f0fdf3 100%)',
-      }),
+      backgroundImage: {
+        "title-gradient": "linear-gradient(180deg, #3a7326 0%, #42e26f 100%)",
+        "title-gradient-2": "linear-gradient(90deg, #3a7326 0%, #42e26f 100%)",
+        "logo-gradient-border":
+          "linear-gradient(180deg, rgba(74, 58, 255, 1) 0%, rgba(76, 191, 255, 1) 100%)",
+        "button-gradient":
+          "linear-gradient(180deg, #3a7326 0%, #3c953d 44.5%, #42e26f 100%)",
+        "feature-gradient":
+          "linear-gradient(90deg, rgba(58, 115, 38, 0.79) 0%, #42e26f 100%)",
+        "preview-gradient":
+          "linear-gradient(90deg, #42e26f 0%, #dbfde4 50%, #f0fdf3 100%)",
+        "button-gradient-2": "linear-gradient(to right, #42E26F, #247C3D)",
+        "hero-gradient":
+          "linear-gradient( 180deg, rgba(202, 246, 208, 0.51) 0%, rgba(223, 250, 226, 0.51) 62.5%, rgba(235, 252, 238, 0.51) 78%, #ffffff 100% )",
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
