@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Link from "next/link";
 
 const MobileNav = ({}) => {
   // Define your features array
@@ -185,10 +186,7 @@ const MobileNav = ({}) => {
           <p className="text-lg font-medium">Product</p>
         </AccordionTrigger>
         {product.map(({ title, description }, index) => (
-          <AccordionContent
-            key={index}
-            className="hover:bg-slate-100 px-5"
-          >
+          <AccordionContent key={index} className="hover:bg-slate-100 px-5">
             <div className="grid gap-2">
               <p className="text-sm font-medium">{title}</p>
               {/* <p className="font-light">{description}</p> */}
@@ -201,10 +199,7 @@ const MobileNav = ({}) => {
           <p className="text-lg font-medium">Solution</p>
         </AccordionTrigger>
         {solutions.map(({ title, description }, index) => (
-          <AccordionContent
-            key={index}
-            className="hover:bg-slate-100 px-5"
-          >
+          <AccordionContent key={index} className="hover:bg-slate-100 px-5">
             <div className="grid gap-2">
               <p className=" text-sm font-medium">{title}</p>
               {/* <p className="font-light">{description}</p> */}
@@ -217,10 +212,7 @@ const MobileNav = ({}) => {
           <p className="text-lg font-medium">Case-Studies</p>
         </AccordionTrigger>
         {caseStudies.map(({ title, description }, index) => (
-          <AccordionContent
-            key={index}
-            className="hover:bg-slate-100 px-5"
-          >
+          <AccordionContent key={index} className="hover:bg-slate-100 px-5">
             <div className="grid gap-2">
               <p className=" text-sm font-medium">{title}</p>
               {/* <p className="font-light">{description}</p> */}
@@ -233,10 +225,7 @@ const MobileNav = ({}) => {
           <p className="text-lg font-medium">Resources</p>
         </AccordionTrigger>
         {resources.map(({ title, description }, index) => (
-          <AccordionContent
-            key={index}
-            className="hover:bg-slate-100 px-5"
-          >
+          <AccordionContent key={index} className="hover:bg-slate-100 px-5">
             <div className="grid gap-2">
               <p className=" text-sm font-medium">{title}</p>
               {/* <p className="font-light">{description}</p> */}
@@ -244,9 +233,13 @@ const MobileNav = ({}) => {
           </AccordionContent>
         ))}
       </AccordionItem>
-      <AccordionItem value="item-5">
-        <AccordionTrigger className="px-5">Pricing</AccordionTrigger>
-        <AccordionContent className="px-5">Pricing</AccordionContent>
+      <AccordionItem
+        value="item-5"
+        className="px-5 py-4 text-lg font-medium hover:text-primary-400"
+      >
+        <Link href="#" legacyBehavior passHref>
+          Pricing
+        </Link>
       </AccordionItem>
     </Accordion>
   );
