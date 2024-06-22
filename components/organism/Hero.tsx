@@ -15,7 +15,7 @@ const Hero = () => {
           <h1 className="text-black text-3xl md:text-5xl font-bold max-w-[833px] text-left md:text-center">
             Effortlessly Manage All Your Startup&apos;s Finances in One Place
           </h1>
-          <p className="text-black text-2xl max-w-[702px] text-left md:text-center">
+          <p className="text-black text-lg md:text-2xl max-w-[702px] text-left md:text-center">
             SynFlow helps you streamline payments, automate payroll, and access
             real-time financial insights, so you can focus on growth.
           </p>
