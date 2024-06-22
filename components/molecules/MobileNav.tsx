@@ -190,8 +190,8 @@ const MobileNav = ({}) => {
             className="hover:bg-slate-100 px-5"
           >
             <div className="grid gap-2">
-              <p className="text-base font-medium">{title}</p>
-              <p className="font-light">{description}</p>
+              <p className="text-sm font-medium">{title}</p>
+              {/* <p className="font-light">{description}</p> */}
             </div>
           </AccordionContent>
         ))}
@@ -206,8 +206,8 @@ const MobileNav = ({}) => {
             className="hover:bg-slate-100 px-5"
           >
             <div className="grid gap-2">
-              <p className=" text-base font-medium">{title}</p>
-              <p className="font-light">{description}</p>
+              <p className=" text-sm font-medium">{title}</p>
+              {/* <p className="font-light">{description}</p> */}
             </div>
           </AccordionContent>
         ))}
@@ -222,8 +222,8 @@ const MobileNav = ({}) => {
             className="hover:bg-slate-100 px-5"
           >
             <div className="grid gap-2">
-              <p className=" text-base font-medium">{title}</p>
-              <p className="font-light">{description}</p>
+              <p className=" text-sm font-medium">{title}</p>
+              {/* <p className="font-light">{description}</p> */}
             </div>
           </AccordionContent>
         ))}
@@ -238,8 +238,8 @@ const MobileNav = ({}) => {
             className="hover:bg-slate-100 px-5"
           >
             <div className="grid gap-2">
-              <p className=" text-base font-medium">{title}</p>
-              <p className="font-light">{description}</p>
+              <p className=" text-sm font-medium">{title}</p>
+              {/* <p className="font-light">{description}</p> */}
             </div>
           </AccordionContent>
         ))}
