@@ -5,6 +5,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import heroDashboard from "@/public/heroDashboard.svg";
 import heroDashboardMobile from "@/public/heroDashboardMobile.svg";
+import Brands from "../molecules/Brands";
 
 const Hero = () => {
   return (
@@ -28,21 +29,22 @@ const Hero = () => {
             className="flex-col-reverse md:!flex-row-reverse gap-5 flex-wrap items-start md:items-center"
           />
         </div>
-        <div className="w-full min-h-[729px] flex relative items-center justify-center">
+        <div className="w-full flex flex-col gap-10 relative items-start justify-center">
           <Image
             src={heroDashboard}
             quality={100}
             fill={true}
             alt="synflow-Dashboard"
-            className="hidden md:flex w-full !h-fit"
+            className="hidden md:flex w-full !h-fit !relative"
           />
           <Image
             src={heroDashboardMobile}
             quality={100}
             fill={true}
             alt="synflow-Dashboard"
-            className="w-full !h-fit md:hidden"
+            className="w-full !h-fit md:hidden !relative"
           />
+          <Brands />
         </div>
       </div>
     </div>
