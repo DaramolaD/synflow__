@@ -134,6 +134,11 @@ const config = {
           900: "#3d3d3d",
           950: "#000000",
         },
+        red_color: {
+          text: "#A23131",
+          bg: "#FFEEEE",
+          border: "#F78282",
+        },
         headerColor: "#CAF6D0",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -162,6 +167,7 @@ const config = {
         },
       },
       backgroundImage: {
+        "subtitle-gradient": "linear-gradient(90deg, #3a7326 0%, #42e26f 100%)",
         "title-gradient": "linear-gradient(180deg, #3a7326 0%, #42e26f 100%)",
         "title-gradient-2": "linear-gradient(90deg, #3a7326 0%, #42e26f 100%)",
         "logo-gradient-border":
