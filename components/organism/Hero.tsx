@@ -10,7 +10,7 @@ import Brands from "../molecules/Brands";
 const Hero = () => {
   return (
     <div className="bg-hero-gradient w-full h-fit">
-      <div className="sectionContainer flex flex-col py-36 items-center gap-8 md:gap-28 md:py-48 lg:py-56 px-5 md:px-10">
+      <div className="sectionContainer flex flex-col py-32 lg:py-36  items-center gap-8 md:gap-28 px-5 md:px-10">
         <div className="flex flex-col gap-6 text-center items-start md:items-center justify-center">
           <HeroNote />
           <h1 className="text-black text-3xl md:text-5xl font-bold max-w-[833px] text-left md:text-center">
