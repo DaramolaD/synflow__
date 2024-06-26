@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const Brands = () => {
   return (
-    <div className="relative flex items-center justify-between gap-5 w-full py-7">
+    <div className="relative flex overflow-hidden items-center justify-between gap-5 w-full py-7">
       {brandList.map(({ id, img, alt }) => (
         <Image
           key={id}
