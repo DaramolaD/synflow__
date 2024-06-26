@@ -25,7 +25,7 @@ const Features = () => {
           {features.map(({ id, title, subState }) => (
             <p
               key={id}
-              className="text-xl tablet:text-xl lg:text-3xl px-4 py-7 md:py-7 md:px-10 hover:text-white hover:bg-subtitle-gradient text-nowrap"
+              className="text-xl tablet:text-xl lg:text-3xl cursor-pointer px-4 py-7 md:py-7 md:px-10 hover:text-white hover:bg-subtitle-gradient text-nowrap"
             >
               {title}
             </p>
