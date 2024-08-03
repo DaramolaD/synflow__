@@ -69,6 +69,7 @@ const config = {
           },
           b_g: {
             50: "#f6f7f7",
+            60: "#F7FEF8",
             100: "#eef0f0",
             200: "#dadddd",
             300: "#b9c0bf",
@@ -83,6 +84,7 @@ const config = {
         },
         dark: {
           50: "#f6f6f9",
+          60: "#FAFAFA",
           100: "#ecebf3",
           200: "#d6d4e3",
           300: "#b0aecb",
@@ -119,6 +121,11 @@ const config = {
           800: "#4031a2",
           900: "#372e81",
           950: "#221b4b",
+        },
+        purple: {
+          100: "#FAF3FA",
+          200: "#DBB0DF",
+          800: "#46244B",
         },
         black: {
           DEFAULT: "#000000",
@@ -164,6 +171,9 @@ const config = {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        borderColor: {
+          100: "#E4E4E7"
         },
       },
       backgroundImage: {

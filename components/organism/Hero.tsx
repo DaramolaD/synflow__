@@ -10,10 +10,10 @@ import Brands from "../molecules/Brands";
 const Hero = () => {
   return (
     <div className="bg-hero-gradient w-full h-fit">
-      <div className="sectionContainer flex flex-col py-32 lg:py-36  items-center gap-8 md:gap-28 px-5 md:px-10">
+      <div className="sectionContainer flex flex-col py-32 pb-10 lg:py-40 lg:pb-20 items-center gap-20 md:gap-24 px-5 md:px-10">
         <div className="flex flex-col gap-6 text-center items-start md:items-center justify-center">
           <HeroNote />
-          <h1 className="text-black text-3xl md:text-5xl font-bold max-w-[833px] text-left md:text-center">
+          <h1 className="text-black text-3xl md:text-5xl font-medium max-w-[833px] text-left md:text-center">
             Effortlessly Manage All Your Startup&apos;s Finances in One Place
           </h1>
           <p className="text-black text-lg md:text-2xl max-w-[702px] text-left md:text-center">
@@ -23,25 +23,25 @@ const Hero = () => {
           <Cta
             primaryCta="Get Started for Free"
             primaryIcon={<ArrowRight />}
-            primaryStyle="hover:shadow-green-300 hover:shadow-md flex-row-reverse items-center text-base font-bold hover:border-orange-500"
+            primaryStyle="hover:shadow-green-300 hover:shadow-md flex-row-reverse items-center text-base font-semibold hover:border-orange-500"
             secondaryCta="Book a demo"
-            secondaryStyle="border border-primary-400 bg-transparent border-black hover:text-white hover:bg-button-gradient hover:border-primary-400"
+            secondaryStyle="text-primary-950 border border-primary-950 bg-transparent hover:text-white hover:bg-button-gradient hover:border-primary-400"
             className="flex-col-reverse md:!flex-row-reverse gap-5 flex-wrap items-start md:items-center"
           />
         </div>
-        <div className="w-full flex flex-col gap-10 relative items-start justify-center">
+        <div className="w-full flex flex-col relative items-start justify-center">
           <Image
             src={heroDashboard}
             quality={100}
             fill={true}
-            alt="synflow-Dashboard"
+            alt="synflowDashboard"
             className="hidden md:flex w-full !h-fit !relative tablet:rounded-3xl rounded-2xl"
           />
           <Image
             src={heroDashboardMobile}
             quality={100}
             fill={true}
-            alt="synflow-Dashboard"
+            alt="synflowDashboard"
             className="w-full !h-fit md:hidden !relative"
           />
           <Brands />
