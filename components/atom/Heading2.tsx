@@ -6,7 +6,7 @@ interface Title {
 
 const Heading2 = ({ title }: Title) => {
   return (
-    <h2 className="bg-title-gradient bg-clip-text text-transparent font-bold text-2xl sm:text-3xl md:text-5xl">
+    <h2 className="bg-title-gradient bg-clip-text text-transparent font-semibold text-2xl md:text-center sm:text-3xl md:text-4xl">
       {title}
     </h2>
   );

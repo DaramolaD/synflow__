@@ -9,8 +9,8 @@ import MobileNav from "../molecules/MobileNav";
 const Header = () => {
   const [menuToggle, setMenuToggle] = useState(false);
   return (
-    <div className="flex z-50 top-0 right-0 left-0 sectionContainer fixed px-5 md:px-8 bg-headerColor/100 rounded-b-3xl">
-      <div className="w-full z-50 flex justify-between items-center px-5 tablet:px-0 lg:px-10 pt-4 pb-7 md:py-7">
+    <div className="flex z-50 top-0 right-0 left-0 sectionContainer fixed bg-headerColor/100 rounded-b-3xl">
+      <div className="w-full z-50 flex justify-between items-center px-5 md:px-10 py-4">
         <Logo width={120} height={40} className="w-32 tablet:w-28 lg:w-40" />
         <div className="hidden tablet:flex">
           <NavigationMenuDemo />

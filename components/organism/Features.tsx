@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Heading2 from "../atom/Heading2";
-import FeatureItem1 from "../molecules/FeatureItem1";
+import FeatureItem from "../molecules/FeatureItem";
 export type Props = {
   titleState: string;
   featureState: string;
@@ -12,26 +12,38 @@ const Features = () => {
   const [titleState, setTitleState] = useState<string>(
     "Effortlessly manage all your transactions in one secure platform."
   );
+  const [selectedFeatureId, setSelectedFeatureId] = useState<number>(1);
 
-  const handleState = (subState: any) => {
-    setFeatureState(subState.state);
+  const handleState = (subState: any, id: number) => {
+    setFeatureState(subState);
     setTitleState(subState.subTitle);
+    setSelectedFeatureId(id);
   };
   return (
-    <div className="sectionContainer w-full flex flex-col items-center justify-center gap-20 pb-12 px-5">
+    <div className="sectionContainer w-full flex flex-col items-center justify-center gap-10 md:gap-12 pb-4 px-5">
       <Heading2 title="Optimize Your Business with Intelligent Solutions" />
       <div className="flex flex-col md:flex-row w-full rounded-3xl overflow-hidden border border-dark-100">
-        <div className="flex flex-row md:flex-col flex-1 w-full bg-[#FAFAFA] overflow-x-scroll divide-x md:divide-y divide-[#E4E4E7]">
+        <div className="hidden md:flex flex-row md:flex-col flex-1 w-full bg-[#FAFAFA]  divide-x md:divide-y divide-[#E4E4E7]">
           {features.map(({ id, title, subState }) => (
             <p
               key={id}
-              className="text-xl tablet:text-xl lg:text-3xl cursor-pointer px-4 py-7 md:py-7 md:px-10 hover:text-white hover:bg-subtitle-gradient text-nowrap"
+              className={`text-xl h-full tablet:text-xl lg:text-[24px] cursor-pointer px-4 py-7 md:py-7 md:px-10 text-wrap ${
+                selectedFeatureId === id
+                  ? "bg-subtitle-gradient text-white"
+                  : "hover:text-white hover:bg-subtitle-gradient"
+              }`}
+              onClick={() => handleState(subState, id)}
             >
               {title}
             </p>
           ))}
         </div>
-        <FeatureItem1 />
+          <p
+            className={`text-xl h-full md:hidden tablet:text-xl lg:text-[24px] cursor-pointer px-4 py-7 md:py-7 md:px-10 text-wrap ${"bg-subtitle-gradient text-white"}`}
+          >
+            Seamless Payment Processing
+          </p>
+        <FeatureItem featureState={featureState} titleState={titleState} />
       </div>
     </div>
   );
@@ -55,7 +67,7 @@ const features = [
     subState: {
       state: "paymentProcessing",
       subTitle:
-        "Effortlessly manage all your transactions in one secure platform.",
+        "Effortlessly manage all your transactions in one secure platform22.",
     },
   },
   {
@@ -64,7 +76,7 @@ const features = [
     subState: {
       state: "paymentProcessing",
       subTitle:
-        "Effortlessly manage all your transactions in one secure platform.",
+        "Effortlessly manage all your transactions in one secure platform33.",
     },
   },
   {
@@ -73,7 +85,7 @@ const features = [
     subState: {
       state: "paymentProcessing",
       subTitle:
-        "Effortlessly manage all your transactions in one secure platform.",
+        "Effortlessly manage all your transactions in one secure platform444.",
     },
   },
   {
@@ -82,7 +94,7 @@ const features = [
     subState: {
       state: "paymentProcessing",
       subTitle:
-        "Effortlessly manage all your transactions in one secure platform.",
+        "Effortlessly manage all your transactions in one secure platform55.",
     },
   },
   {
@@ -91,7 +103,7 @@ const features = [
     subState: {
       state: "paymentProcessing",
       subTitle:
-        "Effortlessly manage all your transactions in one secure platform.",
+        "Effortlessly manage all your transactions in one secure platform6.",
     },
   },
 ];
